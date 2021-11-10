@@ -1,0 +1,233 @@
+<!doctype HTML>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Clicks and Clacks</title>    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Poppins&family=Red+Hat+Mono:ital@1&family=Roboto+Slab:wght@300&family=Source+Sans+Pro&family=Zen+Antique&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">       
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            height: 100%;
+            width: 1800px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #B59F88;
+            color: white;
+        }
+
+        h1 {
+            font-family: 'Zen Antique', serif;
+            display: inline;
+            font-size: 45px;
+        }
+
+        h2 {
+            background-color: #f5f2d0;
+            text-align: left;
+            font-family: 'Merriweather', serif;
+            margin-left: 20px;
+            font-size: 25px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        #name {
+                text-align: center;
+            }
+
+        #navi ul {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #D4CCC4;
+            position: sticky;
+            top: 0;
+            width: 100%;
+        }
+        
+        #navi li {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-style: italic;
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+
+        #navi li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        #navi li a:hover {
+            background-color: #7C5141;
+        }
+        
+        #navi li:last-child {
+            border-right: none;
+        }
+
+        .active {
+            background-color: #BE966D;
+        }
+
+        #date {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        #foot {
+            padding-top: 950px;
+            padding-right: 950px;
+            display: block;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        
+        #author {
+            width: 50%;
+            margin: 0 21%;
+        }
+
+        #authorimg {
+            margin-right: 20px;
+            float: left;
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        .img {
+            height: 450px;
+            width: 450px;
+        }
+
+        #authorabout {
+            margin-right: 20px;
+            text-align: justify;
+            width: 1100px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #content {
+            position: absolute;
+            height: 100%;
+            width: 1800px;
+            background-color: #f5f2d0;
+            float: left;
+            margin-right: 20px;
+            color: black;
+        }
+
+        #daily {
+            display: inline-block;
+            font-family: 'Roboto Condensed', sans-serif;
+            margin-right: 20px;
+            width: 900px;
+            vertical-align: top;
+        }
+
+        #daily .img {
+            float: right;
+            height: 55%;
+            width: 55%;
+        }
+
+        #list {
+            margin-left: 90px;
+        }
+
+        #daily li {
+            margin: 10px 0;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <div id="mypage">
+        <div id="head">
+            <div id="name">
+                <h1>Clicks and Clacks</h1>
+            </div>
+        </div>
+        <br>
+        <div id="navi">
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="CandC_whymk.html">Why Mechanical Keyboards?</a></li>
+            <li><a href="CandC_formfactors.html">Keyboard Form Factors</a></li>
+            <li><a href="CandC_switches.html">Types of Mechanical Switches</a></li>
+            <li class="active"><a href="CandC_author.html">About the Author</a></li> 
+            <li style="float:right" id="date">
+                <script>
+                n = new Date();
+                y = n.getFullYear();
+                m = n.getMonth() + 1;
+                d = n.getDate();
+                const weekday = new Array(7);
+                weekday[0] = "Sunday";
+                weekday[1] = "Monday";
+                weekday[2] = "Tuesday";
+                weekday[3] = "Wednesday";
+                weekday[4] = "Thursday";
+                weekday[5] = "Friday";
+                weekday[6] = "Saturday";
+                let day = weekday[n.getDay()];
+                document.getElementById("date").innerHTML = day + ", " + m + "/" + d + "/" + y; 
+                </script>
+            </li>
+            </ul>
+        </div>
+        <br>
+        <div id="content">
+            <div class="header">
+                <h2>The Author</h2>
+            </div>
+            <div id="author">
+                <div id="authorimg">
+                    <img src="images/authorpic.jpg" alt="Picture of the author in the PSHS uniform" class="img">
+                </div>
+                <div id="authorabout">
+                    <p>Raphael Lorenzo Katigbak is a 9th grade student at Philippine Science High School - Central Luzon Campus. He discovered his interest for mechanical keyboards when he first bought a Keychron K8 for gaming and general schoolwork. 
+                    Though he may have just a little bit of experience within the hobby (having first gotten into it around 4 months ago), he is always willing to experiment and research about the little nuances of this niche craft. 
+                    According to him, the best thing about this hobby is the creativity that he developed through customization and personalization of different keyboards. <br><br> Though it may sound difficult to get into (and, for some, even pointless at all), the author is certain that this hobby will tell you things you may never have thought about the one tool that helps connect us all during this pandemic. 
+                    For him, the keyboard is a tool that is usually taken for granted, but his love for modification and personalization has helped him realize that the keyboard is so much more than a rectangle with letters and numbers. 
+                    It is almost essential to his life (given the fact that online classes rely so much on computers), and it has helped him realize his love for creation and experimentation, as well as artistic development through customization.</p>
+                </div>
+                <br><br>
+                <div id="daily">
+                    <img src="images/keeb.jpg" alt="Picture of the author in the PSHS uniform" class="img"> 
+                <div id="list">
+                        <p>Current daily driver:</p>
+                        <ul>
+                            <li> Keyboard: Keychron K8 (plastic, hotswap) </li>
+                            <li> Plate: Keychron stock plate </li>
+                            <li> Keycaps: XDA Dye-sub Japanese PBT </li>
+                            <li> Switches: Durock T1 Tactile Switches</li>
+                            <li>Lube: Tribosys 3203 </li>
+                            <li> Stabilizers: Durock Plate Mount, lubed </li>
+                            <li> Springs: Durock Gold Plated 67g </li>
+                            <li> Films: TX 0.15mm </li>
+                        </ul>
+                </div>
+            </div> 
+        </div>
+        </div>
+        <div id="foot">
+            &copy; Enzo Katigbak, 9 - Balingkilat 2021-2022
+        </div>
+    </div>
+</body>
+
+</html>

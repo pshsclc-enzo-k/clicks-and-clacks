@@ -1,0 +1,283 @@
+<!doctype HTML>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Clicks and Clacks</title>    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Poppins&family=Red+Hat+Mono:ital@1&family=Roboto+Slab:wght@300&family=Source+Sans+Pro&family=Zen+Antique&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">       
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            height: 100%;
+            width: 1800px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #B59F88;
+            color: white;
+        }
+
+        h1 {
+            font-family: 'Zen Antique', serif;
+            display: inline;
+            font-size: 45px;
+        }
+
+        h2 {
+            background-color: #f5f2d0;
+            text-align: left;
+            font-family: 'Merriweather', serif;
+            margin-left: 20px;
+            font-size: 25px;
+        }
+
+        h3 {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        #name {
+                text-align: center;
+            }
+
+        #navi ul {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #D4CCC4;
+            position: sticky;
+            top: 0;
+            width: 100%;
+        }
+        
+        #navi li {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-style: italic;
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+
+        #navi li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        #navi li a:hover {
+            background-color: #7C5141;
+        }
+        
+        #navi li:last-child {
+            border-right: none;
+        }
+
+        .active {
+            background-color: #BE966D;
+        }
+
+        #date {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        #foot {
+            padding-top: 3730px;
+            padding-right: 100px;
+            display: block;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        
+        #main {
+            width: 75%;
+            margin-left: 5%;
+        }
+
+        .keeb {
+            display: block;
+            margin-left: 550px;
+            margin-right: 500px;
+            height: 80%;
+            width: 80%;
+        }
+
+        p {
+            margin-right: 20px;
+            text-align: justify;
+            width: 1500px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .header p {
+            margin-left: 20px;
+            width: 1755px;
+        }
+
+        #content {
+            position: absolute;
+            width: 1800px;
+            background-color: #f5f2d0;
+            float: left;
+            margin-right: 20px;
+            color: black;
+        }
+
+        .article {
+            margin-left: 50px;
+            margin-bottom: 100px;
+            width: 45%;
+        }
+
+        a {
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="head">
+        <div id="name">
+            <h1>Clicks and Clacks</h1>
+        </div>
+    </div>
+    <br>
+    <div id="navi">
+    <ul>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="CandC_whymk.html">Why Mechanical Keyboards?</a></li>
+        <li class="active"><a href="CandC_formfactors.html">Keyboard Form Factors</a></li>
+        <li><a href="CandC_switches.html">Types of Mechanical Switches</a></li>
+        <li><a href="CandC_author.html">About the Author</a></li> 
+        <li style="float:right" id="date">
+            <script>
+            n = new Date();
+            y = n.getFullYear();
+            m = n.getMonth() + 1;
+            d = n.getDate();
+            const weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+            let day = weekday[n.getDay()];
+            document.getElementById("date").innerHTML = day + ", " + m + "/" + d + "/" + y; 
+            </script>
+        </li>
+        </ul>
+    </div>
+    <br>
+    <div id="content">
+        <div class="header">
+            <h2>Types of Keyboard Form Factors</h2>
+            <p>All keyboards have a size, and each size (or form factor) depends on user preference. Some keyboards are large, with keys used mainly for macros or office work. Some keyboards are small, usually used
+                when gaming for extra mouse space. In this page, we will be going over the common types of keyboard sizes, and their different use cases.</p>
+        </div>
+        <br>
+        <div id="main">
+            <div class="article">
+                <h3>100% or Full Sized</h3>
+                <div>
+                    <img src="images/full.jpg" alt="100%" class="keeb">
+                </div>
+                <div class="desc">
+                    <p>This is 100% layout or full-sized layout. It contains all the keys you need to use a normal computer, and is the basis for all other keyboard form factors. This layout includes
+                        the alphanumerics, modifier keys, the function row, the navigation and arrow keys, and the number pad. This layout is mainly used for office work, and is the one of the most common layout for all keyboards,
+                        even membrane or rubber dome keyboards.
+                    </p>
+                </div>
+            </div>
+            <div class="article">
+                <h3>1800</h3>
+                <div>
+                    <img src="images/1800.jfif" alt="1800" class="keeb">
+                </div>
+                <div class="desc">
+                    <p>The 1800 layout is a more compact form of the 100%. As such, it is sometimes called the 96% layout. The right shift is a bit smaller, to compensate for the arrow cluster begin closer to it.
+                        Also, the navigation keys are bunched together and now rest directly on top of the number pad. This layout is one of the least common form factors for keyboards, since people usually using full-sized
+                        layouts do not need to have their keyboards smaller.
+                    </p>
+                </div>
+            </div>
+            <div class="article">
+                <h3>80% or TKL</h3>
+                <div>
+                    <img src="images/TKL.jpg" alt="TKL" class="keeb">
+                </div>
+                <div class="desc">
+                    <p>The Tenkeyless or TKL layout is one of the most common layout for custom mechanical keyboards. It is a full-sized keyboard minus the number pad, hence the name "Tenkeyless". This is mainly used for a
+                        combination of gaming and productivity, and is usually favored due to the extra space it provides for the mouse when gaming. Since the number pad is usually not needed (dut to the presence of the number row),
+                        this is a favorite among enthusiasts and average keyboard users alike.
+                    </p>
+                </div>
+            </div>
+            <div class="article">
+                <h3>75%</h3>
+                <div>
+                    <img src="images/godspeed75.jpg" alt="75%" class="keeb">
+                </div>
+                <div class="desc">
+                    <p>The 75% layout has seen a rise in popularity due to the releases of entry level keyboards like the GMMK Pro. It is basically a compact form of the TKL layout, with some of the navigational keys
+                        being removed to accomodate desk space. You usually never see this layout for the average keyboard, and as a rule of thumb, 75% keyboards are mainly found in the custom mechanical keyboard scene.
+                        If the layout is 75%, it is usually an entry level board, or a high-grade enthusiast piece. 
+                    </p>
+                </div>
+            </div>
+            <div class="article">
+                <h3>65%</h3>
+                <div>
+                    <img src="images/Portico.jpg" alt="65%" class="keeb">
+                </div>
+                <div class="desc">
+                    <p>A 65% keyboard is the preferred layout for gamers, other than the 60%. It consists of only the essential keys for games (the alphanumeric keys and modifiers), as well as the arrow keys for work use.
+                        This layout gives gamers more space in their desk for their mice, but retains the arrow keys for productivity. Most keyboards of this size also have function layers, to accomodate for the lack of
+                        navigational keys and function row.
+                    </p>
+                </div>
+            </div>
+            <div class="article">
+                <h3>60%</h3>
+                <div>
+                    <img src="images/60.jpg" alt="60%" class="keeb">
+                </div>
+                <div class="desc">
+                    <p>The 60% layout is, along with the 65%, arguably the best keyboard for gamers. This keyboard is a 65% layout without the arrow keys and navigation keys, consisting only of the alphanumeric keys and modifiers.
+                        This is less practical for people who aren't into video games, and, as such, most keyboards made for gamers are usually in this form factor.
+                    </p>
+                </div>
+            </div>
+            <div class="article">
+                <h3>40%</h3>
+                <div>
+                    <img src="images/minivan.jpg" alt="40%" class="keeb">
+                </div>
+                <div class="desc">
+                    <p>Finally, the 40%. This layout is rarely seen outside of a custom mechanical keyboard, and was made for diehard enthusiasts interested in using the alphabet keys only. To some, this layout is a stylistic choice, while most
+                        see it as impractical. As some enthusiasts (like myself) will tell you, you pay more for less keyboard. This is the irony in 40% keyboards. Though they contain less keys than your average keyboard, they are usually worth more
+                        since they were made with enthusiasts who are willing to pay top dollar in mind.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div id="foot">
+        &copy; Enzo Katigbak, 9 - Balingkilat 2021-2022; The author of this page does not own these images and all images in this page were taken from <a href="https://keyboard.university/100-courses/keyboard-sizes-layouts-gdeby" target="_blank" rel="noopener noreferrer">Keyboard University.</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,246 @@
+<!doctype HTML>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Clicks and Clacks</title>    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Poppins&family=Red+Hat+Mono:ital@1&family=Roboto+Slab:wght@300&family=Source+Sans+Pro&family=Zen+Antique&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">       
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            height: 100%;
+            width: 1800px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #B59F88;
+            color: white;
+        }
+
+        h1 {
+            font-family: 'Zen Antique', serif;
+            display: inline;
+            font-size: 45px;
+        }
+
+        h2 {
+            background-color: #f5f2d0;
+            text-align: left;
+            font-family: 'Merriweather', serif;
+            margin-left: 20px;
+            font-size: 25px;
+        }
+
+        h3 {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        #name {
+                text-align: center;
+            }
+
+        #navi ul {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #D4CCC4;
+            position: sticky;
+            top: 0;
+            width: 100%;
+        }
+        
+        #navi li {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-style: italic;
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+
+        #navi li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        #navi li a:hover {
+            background-color: #7C5141;
+        }
+        
+        #navi li:last-child {
+            border-right: none;
+        }
+
+        .active {
+            background-color: #BE966D;
+        }
+
+        #date {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        #foot {
+            padding-top: 1200px;
+            padding-right: 100px;
+            display: block;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        
+        #main {
+            width: 75%;
+            margin-left: 5%;
+        }
+
+        .switch {
+            margin-right: 25px;
+            float: left;
+            height: 35%;
+            width: 35%;
+        }
+
+        p {
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: justify;
+            width: 1500px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .header p {
+            width: 1755px;
+        }
+
+        #content {
+            position: absolute;
+            width: 1800px;
+            background-color: #f5f2d0;
+            float: left;
+            margin-right: 20px;
+            color: black;
+        }
+
+        .article {
+            margin-bottom: 100px;
+            width: 45%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="head">
+        <div id="name">
+            <h1>Clicks and Clacks</h1>
+        </div>
+    </div>
+    <br>
+    <div id="navi">
+    <ul>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="CandC_whymk.html">Why Mechanical Keyboards?</a></li>
+        <li><a href="CandC_formfactors.html">Keyboard Form Factors</a></li>
+        <li class="active"><a href="CandC_switches.html">Types of Mechanical Switches</a></li>
+        <li><a href="CandC_author.html">About the Author</a></li> 
+        <li style="float:right" id="date">
+            <script>
+            n = new Date();
+            y = n.getFullYear();
+            m = n.getMonth() + 1;
+            d = n.getDate();
+            const weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+            let day = weekday[n.getDay()];
+            document.getElementById("date").innerHTML = day + ", " + m + "/" + d + "/" + y; 
+            </script>
+        </li>
+        </ul>
+    </div>
+    <br>
+    <div id="content">
+        <div class="header">
+            <h2>Types of Mechanical Keyswitches</h2>
+            <p>All mechanical keyboards have a switch that is used to register a keypress. This is the main difference between mechanical keyboards and membrane keyboards, and the main reason for the high price point
+                of some custom keyboard builds.
+            </p>
+        </div>
+        <div id="main">
+            <div class="article">
+                <h3>Linear Switches</h3>
+                <div>
+                    <a href="https://input.club/the-comparative-guide-to-mechanical-switches/linear/cherry-mx-red/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/cherry-red.jpg" alt="Cherry MX Red Switches" class="switch">
+                    </a>
+                </div>
+                <div class="desc">
+                    <p>Linear switches are a type of switch that feels smooth on the keypress. They don't have a tactile event when pressed, and the point of actuation is not discernable through pressing.
+                        This type of switch is best used for gaming, as it is smooth when pressed. When you play games on your pc, entering a ton of things at once (commonly referred to as "buttonmashing") is easy
+                        and feels consistent. The noise the switch makes is usually fairly quiet, but not totally silent (unless specifically stated otherwise). <br><br> A common example of a linear switch is the 
+                        Cherry MX red, which is shown here.</p>
+
+                        <p>A sound test of this type of switch can be found <a href="https://youtu.be/dKEhATyJIdM" target="_blank" rel="noopener noreferrer">here</a>, courtesy of one of my friends. <br>
+                        A sound test of a different linear switch can be found <a href="https://youtu.be/kR93un2b2NU" target="_blank" rel="noopener noreferrer">here</a>, courtesy of one of my friends.</p>
+                </div>
+            </div>
+            <div class="article">
+                <h3>Tactile Switches</h3>
+                <div>
+                    <a href="https://input.club/the-comparative-guide-to-mechanical-switches/tactile/cherry-mx-brown/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/cherry-brown.jpg" alt="Cherry MX Brown Switches" class="switch">
+                    </a>
+                </div>
+                <div class="desc">
+                    <p>Tactile switches are a type of switch that has a noticeable bump when pressed. Unlike a linear switch, the switch isn't smooth on press, and the actuation point is discernable by 
+                        keypress alone. This type of switch is best for typing, where making mistakes is less likely due to the aforementioned bump. Tactile switches are generally louder than linear switches,
+                        but some tactile switches are dampened to become silent. <br><br> A common example of a linear switch is the Cherry MX brown, which is shown here.</p>
+
+                        <p>A sound test of this type of switch can be found <a href="https://youtu.be/fb5KjUx9Elo" target="_blank" rel="noopener noreferrer">here</a>, courtesy of one of my friends.</p>
+                </div>
+            </div>
+            <br>
+            <div class="article">
+                <h3>Clicky Switches</h3>
+                <div>
+                    <a href="https://input.club/the-comparative-guide-to-mechanical-switches/tactile-clicky/cherry-mx-blue/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/cherry-blue.jpg" alt="Cherry MX Blue Switches" class="switch">
+                    </a>
+                </div>
+                <div class="desc">
+                    <p>Clicky switches are a type of switch that not only has a noticeable bump when pressed, but also an audible click noise. The actuation point is discernable through both the bump and the click noise.
+                        This type of switch is for people who remember the old days of computer terminals. The audible click noise that these switches make is an homage to the keyboards of old, such as the legendary IBM Model M.
+                        However, in today's standards, most people usually avoid clicky switches, as the noise can be distracting and irritating, especially in the context of offices. <br><br> A common example of a linear switch is the 
+                        Cherry MX blue, which is shown here.</p>
+
+                        <p>A sound test of this type of switch can be found <a href="https://youtu.be/VLzS_b9UuBE" target="_blank" rel="noopener noreferrer">here</a>, courtesy of one of my friends.</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div id="foot">
+        &copy; Enzo Katigbak, 9 - Balingkilat 2021-2022
+    </div>
+</body>
+
+</html>

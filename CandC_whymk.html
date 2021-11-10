@@ -1,0 +1,206 @@
+<!doctype HTML>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Clicks and Clacks</title>    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Poppins&family=Red+Hat+Mono:ital@1&family=Roboto+Slab:wght@300&family=Source+Sans+Pro&family=Zen+Antique&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">       
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            height: 100%;
+            width: 1800px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #B59F88;
+            color: white;
+        }
+
+        h1 {
+            font-family: 'Zen Antique', serif;
+            display: inline;
+            font-size: 45px;
+        }
+
+        h2 {
+            background-color: #f5f2d0;
+            text-align: left;
+            font-family: 'Merriweather', serif;
+            margin-left: 20px;
+            font-size: 25px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        #name {
+                text-align: center;
+            }
+
+        #navi ul {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #D4CCC4;
+            position: sticky;
+            top: 0;
+            width: 100%;
+        }
+        
+        #navi li {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-style: italic;
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+
+        #navi li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        #navi li a:hover {
+            background-color: #7C5141;
+        }
+        
+        #navi li:last-child {
+            border-right: none;
+        }
+
+        .active {
+            background-color: #BE966D;
+        }
+
+        #date {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        #foot {
+            padding-top: 615px;
+            padding-right: 100px;
+            display: block;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        
+        #main {
+            width: 88%;
+            margin-left: 5%;
+        }
+
+        .img {
+            float: right;
+            height: 10%;
+            width: 10%;
+        }
+
+        a .img {
+            margin-left: 20px;
+        }
+
+        p {
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: justify;
+            width: 1565px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+        #content {
+            position: absolute;
+            width: 1800px;
+            background-color: #f5f2d0;
+            float: left;
+            margin-right: 20px;
+            color: black;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="head">
+        <div id="name">
+            <h1>Clicks and Clacks</h1>
+        </div>
+    </div>
+    <br>
+    <div id="navi">
+    <ul>
+        <li><a href="index.html">Homepage</a></li>
+        <li class="active"><a href="CandC_whymk.html">Why Mechanical Keyboards?</a></li>
+        <li><a href="CandC_formfactors.html">Keyboard Form Factors</a></li>
+        <li><a href="CandC_switches.html">Types of Mechanical Switches</a></li>
+        <li><a href="CandC_author.html">About the Author</a></li> 
+        <li style="float:right" id="date">
+            <script>
+            n = new Date();
+            y = n.getFullYear();
+            m = n.getMonth() + 1;
+            d = n.getDate();
+            const weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+            let day = weekday[n.getDay()];
+            document.getElementById("date").innerHTML = day + ", " + m + "/" + d + "/" + y; 
+            </script>
+        </li>
+        </ul>
+    </div>
+    <br>
+    <div id="content">
+        <div class="header">
+            <h2>Why Mechanical Keyboards?</h2>
+        </div>
+        <div id="main">
+            <a href="https://www.alibaba.com/product-detail/2018-Quality-Guarantee-Wired-Office-Keyboards_60732593235.html" target="_blank" rel="noopener noreferrer">
+                <img src="images/membrane.jfif" alt="membrane keyboard" class="img">
+            </a>
+            <p>Ever since I got into this hobby, I've been asked by so many people, "What's the difference between a mechanical keyboard and a regular one? If it types on a computer, shouldn't that be enough? 
+                Why would you spend so much if you could get the same thing for much less?" My response to this usually goes something like this: "Why would you buy designer clothes if a regular t-shirt and pants is enough for you?" In this hobby, preference is king. If you prefer the sound
+                and feel of your office keyboard, then that's great! Some people, such as myself, have different preferences, and as such, are willing to spend a bit more than most would spend on a keyboard in their lifetime.
+            </p>
+            <p>Other than that, I've also been asked, "Why mechanical keyboards specifically? Why not a "normal" hobby like Gundam or sports?" To me, a mechanical keyboard is more than just a brick. Some people may take it for granted,
+                but a keyboard is one of the most important tools of our time. It connects us to the world, no matter the distance between us. It allows us to communicate with others despite not even being physically there with them. 
+                So, given this, I thought, "If I'm going to use this for a long time (something like online classes amidst the pandemic), I might as well personalize it and tinker it to my preferences." This is why I enjoy this hobby.
+                It allows for my creativity to run wild, and for the scientist in me to do research and experiment all sorts of things, from color and design, to studying the sounds my keyboard makes. It may seem weird, but the nerd in my brain
+                enjoys this kind of work. Some may not, but I definitely do. 
+            </p>
+            <p>If you're like me and spend more than 12 hours a day on your computer, then maybe a mechanical keyboard is a worthwhile investment. Productivity becomes just a little bit easier for a lazy guy like me because typing on my custom
+                keyboard just feels nice. Sometimes, I go on my computer just to type on my keyboard, but maybe that's just because I'm a little bit obsessed. I also like to play video games a lot, and so the majority of my time is spent on the computer.
+                Something like a mechanical keyboard may seem like a bad investment, but I say this: "If it makes you happy, then what harm could it do?" If some people are willing to spend a ton of money for designer clothes, bags, or even cars, then it's basically 
+                the same thing with me and mechanical keyboards.
+            </p>
+            <p>One last reason for my near-obsession with keyboards is the community. I love the people of the community and seeing them come together to solve a problem. I even have friends in the community who are willing to share their knowledge with me, to help me grow
+                become more knowledgeable as a person. Seeing all these people with nice-looking keyboards just makes me think, "Wow! That's a nice looking keyboard," much like what people do with expensive cars. I feel like this community is the most welcoming, and with the rise
+                in this hobby's popularity, more and more new people are going to be interested in modifying their keyboards. It honestly doesn't matter how long you've been in this scene; if you need help with a build or just looking to know more in general, this community has your
+                back, and I'm grateful for that.
+            </p>
+        </div>
+    </div>
+    <div id="foot">
+        &copy; Enzo Katigbak, 9 - Balingkilat 2021-2022; All images have their source embedded in the image itself; all you have to do is click the image to be redirected to the source. The author of this page claims
+        no ownership of the images used.
+    </div>
+</body>
+
+</html>

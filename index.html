@@ -1,0 +1,333 @@
+<!doctype HTML>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Clicks and Clacks</title>
+        <!-- insert favicon here -->
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Poppins&family=Red+Hat+Mono:ital@1&family=Roboto+Slab:wght@300&family=Source+Sans+Pro&family=Zen+Antique&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">       
+        
+        <style>
+            body {
+                width: 1800px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #B59F88;
+                color: white;
+            }
+
+            h1 {
+                font-family: 'Zen Antique', serif;
+                display: inline;
+                font-size: 45px;
+            }
+
+            h2 {
+                font-family: 'Roboto Slab', serif;
+                display: inline;
+                font-size: 20px;
+            }
+
+            h3 {
+                font-family: 'Merriweather', serif;
+                margin-left: 20px;
+                font-size: 25px;
+            }
+
+            #navi ul {
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #D4CCC4;
+                position: sticky;
+                top: 0;
+                width: 100%;
+            }
+            
+            #navi li {
+                font-family: 'Source Sans Pro', sans-serif;
+                font-style: italic;
+                float: left;
+                border-right: 1px solid #bbb;
+            }
+
+            #navi li a {
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            
+            #navi li a:hover {
+                background-color: #7C5141;
+            }
+            
+            #navi li:last-child {
+                border-right: none;
+            }
+
+            .active {
+                background-color: #BE966D;
+            }
+
+            #date {
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            #buyhere {
+                width: 1250px;
+                background-color: #f5f2d0;
+                float: left;
+                margin-right: 20px;
+                color: black;
+            }
+
+            #creators {
+                margin-bottom: 20px;
+                width: 530px;
+                background-color: #7C5141;
+                float: left;
+                color: white;
+            }
+
+            .builds {
+                color: white;
+                margin-right: 5px;
+                margin-left: 10px;
+                margin-bottom: 5px;
+                display: inline-block;
+            }
+
+            .builds a {
+                font-family: 'Poppins', sans-serif;
+                color: white;
+                text-decoration: none;
+            }
+
+            .thumbnail {
+                float: left;
+                margin-bottom: 5px;
+                margin-left: 5px;
+                margin-right: 5px;
+                height: 40%;
+                width: 40%;
+            }
+
+            #name {
+                text-align: center;
+            }
+
+            #foot {
+                padding-top: 600px;
+                padding-right: 600px;
+                display: block;
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+
+            .productimg {
+                height: 90%;
+                width: 90%;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
+            .products a {
+                color: black;
+                text-decoration: none;
+            }
+
+            .products h3 {
+                font-family: 'Merriweather', serif;
+                text-align: center;
+                font-size: 25px;
+                margin-top: auto;
+            }
+
+            #shops {
+                width: 530px;
+                background-color: #f8f8ff;
+                float: left;
+                color: black;
+            }
+
+            #shops strong {
+                font-family: 'Zen Kaku Gothic Antique', sans-serif;
+                color: black;
+                font-size: 12px;
+                margin-left: 20px;
+                font-style: italic;
+                display: inline;
+            }
+
+            .vendor {
+                margin-right: 5px;
+                display: inline-block;
+            }
+
+            .vendor a, .vendor p {
+                font-family: 'Poppins', sans-serif;
+                color: black;
+                text-decoration: none;
+            }
+
+            .vlogo {
+                float: left;
+                margin-bottom: 5px;
+                margin-left: 20px;
+                margin-right: 20px;
+                height: 20%;
+                width: 20%;
+            }
+
+            ul {
+                list-style-type: none;
+            }
+
+            #shopee a:hover {
+                text-decoration: underline;
+                text-decoration-color: black;
+            }
+            
+        </style>
+    </head>
+
+<body>
+    <div id="mypage">
+        <div id="head">
+            <div id="name">
+                <h1>Clicks and Clacks</h1>
+            </div>
+        </div>
+        <br>
+        <div id="navi">
+        <ul>
+            <li class="active"><a href="index.html">Homepage</a></li>
+            <li><a href="CandC_whymk.html">Why Mechanical Keyboards?</a></li>
+            <li><a href="CandC_formfactors.html">Keyboard Form Factors</a></li>
+            <li><a href="CandC_switches.html">Types of Mechanical Switches</a></li>
+            <li><a href="CandC_author.html">About the Author</a></li> 
+            <li style="float:right" id="date">
+                <script>
+                n = new Date();
+                y = n.getFullYear();
+                m = n.getMonth() + 1;
+                d = n.getDate();
+                const weekday = new Array(7);
+                weekday[0] = "Sunday";
+                weekday[1] = "Monday";
+                weekday[2] = "Tuesday";
+                weekday[3] = "Wednesday";
+                weekday[4] = "Thursday";
+                weekday[5] = "Friday";
+                weekday[6] = "Saturday";
+                let day = weekday[n.getDay()];
+                document.getElementById("date").innerHTML = day + ", " + m + "/" + d + "/" + y; 
+                </script>
+            </li>
+            </ul>
+        </div>
+        <br>
+        <div id="content">
+            <div id="buyhere">
+                <div class="header">
+                    <h3>Group Buys, Interest Checks, and Available Products (PH)</h3>
+                </div>
+                <div class="products">
+                    <div>
+                        <a href="https://zionstudios.ph/product/epbt-simple-baybayin/" target="_blank" rel="noopener noreferrer">
+                            <img src="https://zionstudios.ph/wp-content/uploads/2021/10/flori.png" alt="Flori with EPBT Simple baybayin" class="productimg">
+                            <h3>EPBT Simple Baybayin</h3>
+                        </a>
+                    </div>
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="https://zionstudios.ph/product/gateron-milky-yellow-linear-switch/" target="_blank" rel="noopener noreferrer">
+                                    <img src="https://zionstudios.ph/wp-content/uploads/2021/02/3_e5281a82daa94c9d9e4212fc77765bb8_4nd.jpg" alt="Gateron Milky Yellow Switches" class="productimg">
+                                    <h3>Gateron Milky Yellow Linear Switches</h3>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="https://zionstudios.ph/product/gateron-black-ink-linear-switch/" target="_blank" rel="noopener noreferrer">
+                                    <img src="https://zionstudios.ph/wp-content/uploads/2021/02/5_4nd.jpg" alt="Gateron Black Ink Switches" class="productimg">
+                                    <h3>Gateron Black Ink V2 Linear Switches</h3>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div id="creators">
+                <div class="header">
+                    <h3>Builds from Popular Creators</h3>
+                </div>
+                <div class="builds">
+                    <a href="https://youtu.be/eTbb4DuDNus" target="_blank" rel="noopener noreferrer">
+                        <img src="https://img.youtube.com/vi/eTbb4DuDNus/maxresdefault.jpg" alt="youtube thumbnail" class="thumbnail">
+                        <p>I built a $199 BUDGET Custom Keyboard!</p></a>  
+                </div>
+                <div class="builds">
+                    <a href="https://youtu.be/u3Fy4PkpTVs" target="_blank" rel="noopener noreferrer">
+                        <img src="https://img.youtube.com/vi/u3Fy4PkpTVs/maxresdefault.jpg" alt="youtube thumbnail" class="thumbnail">
+                        <p>The Making of Tfue's $3500 Custom Luxury Mechanical Keyboard</p></a>    
+                </div>
+                <div class="builds">
+                    <a href="https://youtu.be/XZjoPsmIO80" target="_blank" rel="noopener noreferrer">
+                        <img src="https://img.youtube.com/vi/XZjoPsmIO80/maxresdefault.jpg" alt="youtube thumbnail" class="thumbnail">
+                        <p>I Surprised TommyInnit With A Custom Keyboard...</p></a>
+                </div>
+                <div class="builds">
+                    <a href="https://youtu.be/h3LJnYP0rc4" target="_blank" rel="noopener noreferrer">
+                        <img src="https://img.youtube.com/vi/h3LJnYP0rc4/maxresdefault.jpg" alt="youtube thumbnail" class="thumbnail">
+                        <p>🐸Frog TKL by Geonworks Build & Typing Sounds (Fierce Girls Switches, GMK Modern Dolch Light Keycaps)</p></a>
+                </div>
+            </div>  
+            
+            <div id="shops">
+                <div class="header">
+                    <h3>Stores and Vendors (SEA/PH)</h3>
+                </div>
+                
+                <div class="vendor">
+                    <a href="https://zionstudios.ph" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.shopify.com/s/files/1/0508/2287/3260/files/ZION_LOGO-01_1200x1200.png?v=1610787313" alt="Zion Studios logo" class="vlogo">
+                        <p>Zion Studios PH</p>
+                    </a>  
+                </div>
+                <div class="vendor">
+                    <a href="https://kbdfans.com" target="_blank" rel="noopener noreferrer">
+                        <img src="images/kbdfans.png" alt="KBDFans logo" class="vlogo">
+                        <p>KBDFans</p>
+                    </a>  
+                </div>
+                <br><br>
+                <div class="vendor">
+                    <img src="images/Shopeelogo.png" alt="Shopee logo" class="vlogo">
+                        <p>Shopee Vendors<p>
+                        <div>
+                            <ul id="shopee">
+                                <li><a href="https://shopee.ph/homebru" target="_blank" rel="noopener noreferrer">Homebrü</a></li>
+                                <li><a href="https://shopee.ph/jufs24" target="_blank" rel="noopener noreferrer">JMK</a></li>
+                                <li><a href="https://shopee.ph/rotoboxph" target="_blank" rel="noopener noreferrer">Rotobox Philippines</a></li>
+                            </ul>
+                        </div>
+                </div>
+            <strong>The author of this webpage is neither affiliated with nor sponsored by these vendors.</strong>
+            </div>
+        </div>
+        <div id="foot">
+            &copy; Enzo Katigbak, 9 - Balingkilat 2021-2022
+        </div>
+    </div>
+</body>
+
+</html>
